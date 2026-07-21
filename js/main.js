@@ -6,6 +6,24 @@ if (hdr) {
   });
 }
 
+// mobile nav toggle
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.querySelector("nav.links");
+if (navToggle && navLinks) {
+  const closeNav = () => {
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.textContent = "☰";
+  };
+  navToggle.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.textContent = open ? "✕" : "☰";
+  });
+  navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", closeNav));
+  window.addEventListener("resize", () => { if (window.innerWidth > 900) closeNav(); });
+}
+
 // reveal
 const io = new IntersectionObserver((es)=>{
   es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });

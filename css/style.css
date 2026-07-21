@@ -43,7 +43,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;
   transition:background .4s,backdrop-filter .4s,border-color .4s;
   border-bottom:1px solid transparent;}
 header.scrolled{background:rgba(14,12,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.brand{font-family:"Bodoni Moda",serif;font-size:1.15rem;letter-spacing:.22em;font-weight:500;display:flex;align-items:center;gap:.6rem}
+.brand{font-family:"Bodoni Moda",serif;font-size:1.15rem;letter-spacing:.22em;font-weight:500;display:flex;align-items:center;gap:.6rem;position:relative;z-index:2}
 .brand img{width:1.6rem;height:1.6rem;display:block}
 .brand span{color:var(--gold)}
 nav.links{display:flex;gap:1.8rem;align-items:center}
@@ -54,11 +54,11 @@ nav.links a.active{color:var(--gold)}
 .faq-item{border-bottom:1px solid var(--line);padding:1.5rem 0}
 .faq-item h3{font-size:1.2rem;font-weight:500;color:var(--parchment);margin-bottom:.6rem}
 .faq-item p{color:var(--stone);font-size:.95rem;max-width:64ch}
-.lang{display:flex;gap:.15rem;font-family:"Space Mono",monospace;font-size:.72rem}
+.lang{display:flex;gap:.15rem;font-family:"Space Mono",monospace;font-size:.72rem;position:relative;z-index:2}
 .lang button{background:none;border:none;color:var(--stone);cursor:pointer;padding:.25rem .4rem;letter-spacing:.05em;transition:color .2s;font-family:inherit}
 .lang button.active{color:var(--gold)}
 .lang button:hover{color:var(--parchment)}
-.navtoggle{display:none;background:none;border:none;color:var(--parchment);cursor:pointer;font-family:"Space Mono",monospace;font-size:.72rem;letter-spacing:.15em}
+.navtoggle{display:none;background:none;border:none;color:var(--parchment);cursor:pointer;font-family:"Space Mono",monospace;font-size:1.4rem;line-height:1;padding:.2rem .3rem;letter-spacing:.15em;position:relative;z-index:2}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;
@@ -213,6 +213,15 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
 
 @media(max-width:900px){
   nav.links{display:none}
+  nav.links.open{
+    display:flex;flex-direction:column;gap:0;align-items:stretch;
+    position:fixed;top:0;left:0;right:0;z-index:1;
+    padding:6rem clamp(1.4rem,5vw,3rem) 2rem;
+    background:rgba(14,12,9,.97);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    max-height:100vh;overflow-y:auto;
+  }
+  nav.links.open a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
   .navtoggle{display:block}
   .split,.lab-grid{grid-template-columns:1fr}
   .catalog-grid{grid-template-columns:1fr;max-width:420px;margin-inline:auto}
