@@ -24,7 +24,7 @@ const I = {
     s2t:"Dissol",s2p:"Remena-la en aigua tèbia, te o llet. Mai bullent: la calor excessiva degrada la resina.",
     s3t:"Observa",s3p:"L'aigua s'ha de tornar daurada i translúcida. És el segell de la resina genuïna.",
     s4t:"Beu",s4p:"Un cop al dia, preferiblement al matí amb l'estómac buit. Constància per damunt de quantitat.",
-    gtT:"La prova de l'or",gtP:"La resina de veritat es dissol i tenyeix l'aigua d'un daurat ambre. Si no ho fa, no és shilajit pur. La nostra passa la prova, sempre.",
+    gtT:"La prova de l'or",gtP:"La resina de veritat es dissol i tenyeix l'aigua d'un daurat ambre. Si no ho fa, no és shilajit pur. La nostra passa la prova, sempre.",gtAlt:"Resina de shilajit dissolent-se en aigua tèbia i tornant-la d'un daurat ambre",
     wlTitle:"Sigues dels primers.",wlSub:"La botiga encara no és oberta. Deixa el teu correu i t'avisem el dia que Or de Roca surti a la venda a Andorra.",
     wlPh:"el.teu@correu.com",wlBtn:"Avisa'm",wlOk:"Fet. Et tenim a la llista.",wlNet:"Hi ha hagut un error. Torna-ho a provar.",wlErr:"Introdueix un correu vàlid.",
     fNote:"Shilajit d'altura, refinat i envasat a Andorra. Un producte de natura, tractat amb cura.",
@@ -43,7 +43,9 @@ const I = {
     sc3t:"Puresa abans que res",sc3p:"Fonts sanitàries adverteixen que el shilajit sense refinar pot contenir metalls pesants. Per això cada lot Or de Roca s'analitza al laboratori independent Eurofins abans d'envasar-se.",sc3s:"Font: Banner Health — grup hospitalari (EUA) ↗",
     sc4t:"Una mirada des d'Europa",sc4p:"Un observatori de medicina integrativa amb seu a Espanya recull més de deu anys d'estudis en humans, animals i laboratori que li atribueixen efectes revitalitzants, antioxidants i antiinflamatoris.",sc4s:"Font: Observatori de Medicina Integrativa (Espanya) ↗",
     sciDisc:"Aquesta informació és divulgativa i prové de fonts sanitàries independents (Cleveland Clinic, Healthline, WebMD, Banner Health). No substitueix el consell mèdic professional ni implica que Or de Roca tracti, curi o previngui cap malaltia.",
-    crumbHome:"Inici"
+    crumbHome:"Inici",
+    prodBannerAlt:"Pot de resina de shilajit Or de Roca sobre pedra volcànica, amb cullereta dosificadora i una tassa d'aigua calenta",
+    purBannerAlt:"Primer pla macro de la resina de shilajit negra, brillant com l'obsidiana"
   },
   es:{
     navHome:"Inicio",nav1:"Origen",nav2:"Producto",nav3:"Pureza",nav4:"Uso",navSci:"Evidencia",nav5:"FAQ",
@@ -70,7 +72,7 @@ const I = {
     s2t:"Disuelve",s2p:"Remuévela en agua tibia, té o leche. Nunca hirviendo: el calor excesivo degrada la resina.",
     s3t:"Observa",s3p:"El agua debe volverse dorada y translúcida. Es el sello de la resina genuina.",
     s4t:"Bebe",s4p:"Una vez al día, preferiblemente en ayunas por la mañana. Constancia por encima de cantidad.",
-    gtT:"La prueba del oro",gtP:"La resina de verdad se disuelve y tiñe el agua de un dorado ámbar. Si no lo hace, no es shilajit puro. La nuestra pasa la prueba, siempre.",
+    gtT:"La prueba del oro",gtP:"La resina de verdad se disuelve y tiñe el agua de un dorado ámbar. Si no lo hace, no es shilajit puro. La nuestra pasa la prueba, siempre.",gtAlt:"Resina de shilajit disolviéndose en agua tibia y tiñéndola de un dorado ámbar",
     wlTitle:"Sé de los primeros.",wlSub:"La tienda aún no está abierta. Deja tu correo y te avisamos el día que Or de Roca salga a la venta en Andorra.",
     wlPh:"tu@correo.com",wlBtn:"Avísame",wlOk:"Hecho. Te tenemos en la lista.",wlNet:"Ha habido un error. Inténtalo de nuevo.",wlErr:"Introduce un correo válido.",
     fNote:"Shilajit de altura, refinado y envasado en Andorra. Un producto de la naturaleza, tratado con cuidado.",
@@ -89,7 +91,9 @@ const I = {
     sc3t:"La pureza, antes que nada",sc3p:"Fuentes sanitarias advierten que el shilajit sin refinar puede contener metales pesados. Por eso cada lote Or de Roca se analiza en el laboratorio independiente Eurofins antes de envasarse.",sc3s:"Fuente: Banner Health — grupo hospitalario (EE. UU.) ↗",
     sc4t:"Una mirada desde Europa",sc4p:"Un observatorio de medicina integrativa con sede en España recoge más de diez años de estudios en humanos, animales y laboratorio que le atribuyen efectos revitalizantes, antioxidantes y antiinflamatorios.",sc4s:"Fuente: Observatorio de Medicina Integrativa (España) ↗",
     sciDisc:"Esta información es divulgativa y proviene de fuentes sanitarias independientes (Cleveland Clinic, Healthline, WebMD, Banner Health). No sustituye el consejo médico profesional ni implica que Or de Roca trate, cure o prevenga ninguna enfermedad.",
-    crumbHome:"Inicio"
+    crumbHome:"Inicio",
+    prodBannerAlt:"Tarro de resina de shilajit Or de Roca sobre piedra volcánica, con cucharita dosificadora y una taza de agua caliente",
+    purBannerAlt:"Primer plano macro de la resina de shilajit negra, brillante como la obsidiana"
   },
   en:{
     navHome:"Home",nav1:"Origin",nav2:"Product",nav3:"Purity",nav4:"Use",navSci:"Evidence",nav5:"FAQ",
@@ -116,7 +120,7 @@ const I = {
     s2t:"Dissolve",s2p:"Stir it into warm water, tea or milk. Never boiling: excess heat degrades the resin.",
     s3t:"Watch",s3p:"The water should turn golden and translucent. That's the mark of genuine resin.",
     s4t:"Drink",s4p:"Once a day, ideally on an empty stomach in the morning. Consistency over quantity.",
-    gtT:"The gold test",gtP:"Real resin dissolves and stains the water an amber gold. If it doesn't, it isn't pure shilajit. Ours passes the test, every time.",
+    gtT:"The gold test",gtP:"Real resin dissolves and stains the water an amber gold. If it doesn't, it isn't pure shilajit. Ours passes the test, every time.",gtAlt:"Shilajit resin dissolving in warm water and turning it an amber gold",
     wlTitle:"Be among the first.",wlSub:"The shop isn't open yet. Leave your email and we'll tell you the day Or de Roca goes on sale in Andorra.",
     wlPh:"you@email.com",wlBtn:"Notify me",wlOk:"Done. You're on the list.",wlNet:"Something went wrong. Please try again.",wlErr:"Enter a valid email.",
     fNote:"High-altitude shilajit, refined and packed in Andorra. A product of nature, handled with care.",
@@ -135,7 +139,9 @@ const I = {
     sc3t:"Purity above all",sc3p:"Health sources warn that unrefined shilajit can contain heavy metals. That's why every Or de Roca batch is tested by Eurofins, an independent laboratory, before packing.",sc3s:"Source: Banner Health — U.S. hospital network ↗",
     sc4t:"A view from Europe",sc4p:"A Spain-based integrative medicine observatory has tracked over a decade of human, animal and lab studies attributing revitalising, antioxidant and anti-inflammatory effects to it.",sc4s:"Source: Observatorio de Medicina Integrativa (Spain) ↗",
     sciDisc:"This information is educational and comes from independent health sources (Cleveland Clinic, Healthline, WebMD, Banner Health). It does not replace professional medical advice, nor does it imply Or de Roca treats, cures or prevents any disease.",
-    crumbHome:"Home"
+    crumbHome:"Home",
+    prodBannerAlt:"Jar of Or de Roca shilajit resin on volcanic stone, with a dosing spoon and a cup of warm water",
+    purBannerAlt:"Macro close-up of the black shilajit resin, glossy like obsidian"
   },
   fr:{
     navHome:"Accueil",nav1:"Origine",nav2:"Produit",nav3:"Pureté",nav4:"Usage",navSci:"Preuves",nav5:"FAQ",
@@ -162,7 +168,7 @@ const I = {
     s2t:"Dissolvez",s2p:"Mélangez-la dans de l'eau tiède, du thé ou du lait. Jamais bouillant : une chaleur excessive dégrade la résine.",
     s3t:"Observez",s3p:"L'eau doit devenir dorée et translucide. C'est la marque d'une résine authentique.",
     s4t:"Buvez",s4p:"Une fois par jour, de préférence à jeun le matin. La régularité avant la quantité.",
-    gtT:"Le test de l'or",gtP:"La vraie résine se dissout et teinte l'eau d'un or ambré. Si ce n'est pas le cas, ce n'est pas du shilajit pur. La nôtre réussit le test, à chaque fois.",
+    gtT:"Le test de l'or",gtP:"La vraie résine se dissout et teinte l'eau d'un or ambré. Si ce n'est pas le cas, ce n'est pas du shilajit pur. La nôtre réussit le test, à chaque fois.",gtAlt:"Résine de shilajit se dissolvant dans l'eau tiède et la teintant d'un or ambré",
     wlTitle:"Soyez parmi les premiers.",wlSub:"La boutique n'est pas encore ouverte. Laissez votre e-mail et nous vous préviendrons le jour où Or de Roca sera en vente en Andorre.",
     wlPh:"vous@email.com",wlBtn:"Prévenez-moi",wlOk:"C'est fait. Vous êtes sur la liste.",wlNet:"Une erreur est survenue. Réessayez.",wlErr:"Saisissez un e-mail valide.",
     fNote:"Shilajit d'altitude, raffiné et conditionné en Andorre. Un produit de la nature, traité avec soin.",
@@ -181,7 +187,9 @@ const I = {
     sc3t:"La pureté avant tout",sc3p:"Des sources médicales avertissent que le shilajit non raffiné peut contenir des métaux lourds. C'est pourquoi chaque lot Or de Roca est analysé par Eurofins, un laboratoire indépendant, avant conditionnement.",sc3s:"Source : Banner Health — groupe hospitalier (États-Unis) ↗",
     sc4t:"Un regard depuis l'Europe",sc4p:"Un observatoire de médecine intégrative basé en Espagne recense plus de dix ans d'études humaines, animales et de laboratoire lui attribuant des effets revitalisants, antioxydants et anti-inflammatoires.",sc4s:"Source : Observatorio de Medicina Integrativa (Espagne) ↗",
     sciDisc:"Ces informations sont à visée informative et proviennent de sources médicales indépendantes (Cleveland Clinic, Healthline, WebMD, Banner Health). Elles ne remplacent pas un avis médical professionnel et n'impliquent pas qu'Or de Roca traite, guérisse ou prévienne une quelconque maladie.",
-    crumbHome:"Accueil"
+    crumbHome:"Accueil",
+    prodBannerAlt:"Pot de résine de shilajit Or de Roca sur pierre volcanique, avec cuillère doseuse et une tasse d'eau chaude",
+    purBannerAlt:"Gros plan macro de la résine de shilajit noire, brillante comme l'obsidienne"
   }
 };
 
