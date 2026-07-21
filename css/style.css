@@ -192,9 +192,16 @@ nav.links a.active{color:var(--gold)}
   border:1px solid var(--line);border-radius:2px;padding:.55rem .9rem;background:rgba(215,166,63,.05)}
 
 /* ---------- WAITLIST ---------- */
-.wl{background:linear-gradient(180deg,var(--obsidian),#0a0806);text-align:center}
+.wl{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--obsidian),#0a0806);text-align:center}
+.wl::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 55% 62% at 50% 42%,rgba(215,166,63,.20),rgba(215,166,63,.05) 45%,transparent 72%),
+    linear-gradient(180deg,rgba(14,12,9,.82),rgba(10,8,6,.93)),
+    url("../assets/resin-macro.jpg");
+  background-size:cover;background-position:center;}
+.wl .wrap{position:relative;z-index:1}
 .wl h2{font-size:clamp(2.2rem,6vw,4rem);margin-bottom:1.2rem}
-.wl p{color:var(--stone);max-width:48ch;margin:0 auto 2.4rem}
+.wl p{color:var(--parchment);opacity:.85;max-width:48ch;margin:0 auto 2.4rem}
 .wl-form{display:flex;gap:.6rem;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
 .wl-form input{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);color:var(--parchment);
   padding:.95rem 1.2rem;border-radius:2px;font-family:"Hanken Grotesk",sans-serif;font-size:.95rem}
