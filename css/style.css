@@ -40,9 +40,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
   padding:1.1rem clamp(1.4rem,5vw,3rem);
   background:linear-gradient(180deg,rgba(14,12,9,.65),transparent);
-  transition:background .4s,backdrop-filter .4s,border-color .4s;
-  border-bottom:1px solid transparent;}
-header.scrolled{background:rgba(14,12,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  transition:background .4s,backdrop-filter .4s,box-shadow .4s;}
+header.scrolled{background:rgba(14,12,9,.82);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
 .brand{font-family:"Bodoni Moda",serif;font-size:1.15rem;letter-spacing:.22em;font-weight:500;display:flex;align-items:center;gap:.6rem;position:relative;z-index:2}
 .brand img{width:1.6rem;height:1.6rem;display:block}
 .brand span{color:var(--gold)}
