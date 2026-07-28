@@ -1,7 +1,7 @@
 const I = {
   ca:{
     navHome:"Inici",nav1:"Origen",nav2:"Producte",nav3:"Puresa",nav4:"Ús",navSci:"Evidència",nav5:"FAQ",
-    heroEy:"Shilajit de l'Himàlaia",heroOf:"de",
+    heroEy:"Shilajit de l'Himàlaia",
     heroTag:"Resina de muntanya, negra com l'obsidiana. En aigua tèbia es torna or. Portada de l'altura, refinada i envasada a Andorra.",
     heroCta1:"Veure la col·lecció",heroCta2:"Llista d'espera",heroSoon:"Disponible aviat",seeMore:"Descobreix-ho",seeProd:"Veure la col·lecció",seeLab:"Veure l'anàlisi complet",seeRit:"Com es pren",seeSci:"Llegir l'evidència",
     o1eyebrow:"Origen",o1title:"De la fissura de la roca, a l'altura de l'Himàlaia.",
@@ -49,7 +49,7 @@ const I = {
   },
   es:{
     navHome:"Inicio",nav1:"Origen",nav2:"Producto",nav3:"Pureza",nav4:"Uso",navSci:"Evidencia",nav5:"FAQ",
-    heroEy:"Shilajit del Himalaya",heroOf:"de",
+    heroEy:"Shilajit del Himalaya",
     heroTag:"Resina de montaña, negra como la obsidiana. En agua tibia se vuelve oro. Traída de la altura, refinada y envasada en Andorra.",
     heroCta1:"Ver la colección",heroCta2:"Lista de espera",heroSoon:"Disponible pronto",seeMore:"Descúbrelo",seeProd:"Ver la colección",seeLab:"Ver el análisis completo",seeRit:"Cómo se toma",seeSci:"Leer la evidencia",
     o1eyebrow:"Origen",o1title:"De la grieta de la roca, a la altura del Himalaya.",
@@ -97,7 +97,7 @@ const I = {
   },
   en:{
     navHome:"Home",nav1:"Origin",nav2:"Product",nav3:"Purity",nav4:"Use",navSci:"Evidence",nav5:"FAQ",
-    heroEy:"Shilajit from the Himalaya",heroOf:"of",
+    heroEy:"Shilajit from the Himalaya",
     heroTag:"Mountain resin, black as obsidian. In warm water it turns to gold. Brought down from altitude, refined and packed in Andorra.",
     heroCta1:"See the collection",heroCta2:"Join the waitlist",heroSoon:"Coming soon",seeMore:"Discover it",seeProd:"See the collection",seeLab:"See the full analysis",seeRit:"How to take it",seeSci:"Read the evidence",
     o1eyebrow:"Origin",o1title:"From a crack in the rock, to the heights of the Himalaya.",
@@ -145,7 +145,7 @@ const I = {
   },
   fr:{
     navHome:"Accueil",nav1:"Origine",nav2:"Produit",nav3:"Pureté",nav4:"Usage",navSci:"Preuves",nav5:"FAQ",
-    heroEy:"Shilajit de l'Himalaya",heroOf:"de",
+    heroEy:"Shilajit de l'Himalaya",
     heroTag:"Résine de montagne, noire comme l'obsidienne. Dans l'eau tiède, elle devient or. Descendue de l'altitude, raffinée et conditionnée en Andorre.",
     heroCta1:"Voir la collection",heroCta2:"Liste d'attente",heroSoon:"Bientôt disponible",seeMore:"Découvrir",seeProd:"Voir la collection",seeLab:"Voir l'analyse complète",seeRit:"Comment le prendre",seeSci:"Lire les preuves",
     o1eyebrow:"Origine",o1title:"D'une fissure de la roche aux hauteurs de l'Himalaya.",

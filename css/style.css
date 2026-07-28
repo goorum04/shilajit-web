@@ -45,7 +45,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;
   transition:background .4s,backdrop-filter .4s,box-shadow .4s;}
 header.scrolled{background:rgba(14,12,9,.82);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
 .brand{font-family:"Bodoni Moda",serif;font-size:1.15rem;letter-spacing:.22em;font-weight:500;display:flex;align-items:center;gap:.6rem;position:relative;z-index:2}
-.brand img{width:1.6rem;height:1.6rem;display:block}
+.brand img{width:2.6rem;height:2.6rem;display:block}
 .brand span{color:var(--gold)}
 nav.links{display:flex;gap:1.8rem;align-items:center}
 nav.links a{font-size:.82rem;letter-spacing:.05em;color:var(--stone);transition:color .25s}
