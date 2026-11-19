@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://orderoca.com/sitemap.xml
+Sitemap: https://aarakul.com/sitemap.xml
