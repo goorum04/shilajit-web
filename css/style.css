@@ -62,9 +62,8 @@ nav.links a.active{color:var(--gold)}
 .navtoggle{display:none;background:none;border:none;color:var(--parchment);cursor:pointer;font-family:"Space Mono",monospace;font-size:1.4rem;line-height:1;padding:.2rem .3rem;letter-spacing:.15em;position:relative;z-index:2}
 
 /* ---------- HERO ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;
-  padding-top:6rem;overflow:hidden;background-size:cover;background-position:center 38%;background-repeat:no-repeat}
-.hero.small{min-height:56vh}
+.hero{position:relative;min-height:56vh;display:flex;align-items:center;
+  overflow:hidden;background-size:cover;background-position:center 38%;background-repeat:no-repeat}
 .bloom{position:absolute;inset:0;z-index:0;overflow:hidden}
 .bloom::before,.bloom::after{content:"";position:absolute;border-radius:50%;filter:blur(60px)}
 .bloom::before{
@@ -87,12 +86,7 @@ nav.links a.active{color:var(--gold)}
 @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1);filter:brightness(1)}50%{transform:translate(-50%,-52%) scale(1.05);filter:brightness(1.15)}}
 
 .hero-content{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%}
-.hero .eyebrow{display:block;margin-bottom:1.5rem;color:#E7C374}
-.hero h1{font-size:clamp(3.4rem,11vw,8.5rem);letter-spacing:.01em;color:#ECE4D3}
-.hero h1.page-title{font-size:clamp(2.6rem,7vw,5rem)}
-.hero h1 .of{font-style:italic;font-weight:400;color:#E7C374}
-.hero-tag{font-size:clamp(1.05rem,2vw,1.35rem);max-width:33ch;margin:1.8rem 0 2.6rem;color:#ECE4D3;opacity:.92;font-weight:300}
-.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-statement{font-size:clamp(1.7rem,4.2vw,3.2rem);line-height:1.16;max-width:24ch;color:#ECE4D3;text-shadow:0 2px 26px rgba(14,12,9,.6)}
 .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.9rem;border-radius:2px;
   font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:500;cursor:pointer;
   transition:transform .25s,background .25s,color .25s,border-color .25s;font-family:"Space Mono",monospace;}
@@ -100,11 +94,6 @@ nav.links a.active{color:var(--gold)}
 .btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
 .btn-ghost{background:transparent;color:var(--parchment);border:1px solid rgba(36,28,18,.3)}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.hero .btn-ghost{color:#ECE4D3;border:1px solid rgba(236,228,211,.4)}
-.hero .btn-ghost:hover{border-color:#E7C374;color:#E7C374}
-.soon{display:inline-block;margin-left:.2rem;font-family:"Space Mono",monospace;font-size:.66rem;letter-spacing:.2em;
-  color:var(--gold);border:1px solid var(--line);border-radius:2px;padding:.35rem .7rem;text-transform:uppercase}
-.hero .soon{color:#E7C374;border-color:rgba(236,228,211,.35)}
 
 /* ---------- GENERIC SECTION HEADS ---------- */
 .head{max-width:56ch;margin-bottom:3.5rem}
@@ -136,22 +125,38 @@ nav.links a.active{color:var(--gold)}
 .altcard .meta .big{font-family:"Bodoni Moda",serif;font-size:2.6rem;color:#E7C374;line-height:1}
 .altcard .meta .lbl{color:#C9BCA8;font-size:.82rem;margin-top:.4rem}
 
-/* ---------- CATALOG ---------- */
-.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1rem}
-.prod{border:1px solid var(--line);border-radius:3px;background:linear-gradient(180deg,var(--panel),var(--resin));
-  padding:0 0 1.8rem;overflow:hidden;transition:transform .35s,border-color .35s;display:flex;flex-direction:column}
-.prod:hover{transform:translateY(-4px);border-color:rgba(215,166,63,.4)}
-.prod .vis{aspect-ratio:1/1;position:relative;overflow:hidden;border-bottom:1px solid var(--line);
-  background:radial-gradient(circle at 50% 120%,rgba(215,166,63,.22),transparent 60%),#EFE3C9}
-.prod .body{padding:1.6rem 1.6rem 0}
-.prod .fmt{color:var(--stone)}
-.prod h3{font-size:1.5rem;margin:.35rem 0 .6rem}
-.prod .desc{color:var(--stone);font-size:.92rem;min-height:3.4em}
-.prod .foot{display:flex;align-items:center;justify-content:space-between;margin-top:1.3rem}
-.prod .price{font-family:"Bodoni Moda",serif;font-size:1.35rem;color:var(--parchment)}
-.prod .price small{color:var(--stone);font-size:.7rem;font-family:"Space Mono",monospace;letter-spacing:.1em}
-.badge{font-family:"Space Mono",monospace;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--gold);border:1px solid var(--line);padding:.4rem .7rem;border-radius:2px}
+/* ---------- BUY ---------- */
+.buy{padding-top:clamp(6.2rem,11vw,8.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
+.crumb + .buy{padding-top:2rem}
+.buy-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.8rem,5vw,4.5rem);align-items:center}
+.buy-vis{aspect-ratio:1/1;max-height:min(66vh,560px);border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--resin)}
+.buy-vis img{width:100%;height:100%;object-fit:cover;display:block}
+.buy-title{font-size:clamp(2.8rem,6.5vw,5rem);margin:.5rem 0 1.5rem}
+.buy-pick{color:var(--stone);margin-bottom:.65rem}
+.opts{display:flex;flex-wrap:wrap;gap:.5rem}
+.opt{font-family:"Space Mono",monospace;font-size:.82rem;letter-spacing:.06em;padding:.8rem 1.15rem;cursor:pointer;
+  background:var(--panel);color:var(--parchment);border:1px solid var(--line);border-radius:2px;
+  transition:background .2s,color .2s,border-color .2s}
+.opt:hover{border-color:var(--gold)}
+.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.opt.active{background:var(--parchment);color:var(--obsidian);border-color:var(--parchment)}
+.buy-price{font-family:"Bodoni Moda",serif;font-size:clamp(2.1rem,4.5vw,2.9rem);line-height:1;margin:1.5rem 0 .9rem}
+.buy-desc{color:var(--stone);max-width:44ch;min-height:3.2em}
+.buy-note{color:var(--stone);font-size:.82rem;max-width:48ch;margin-top:1.1rem;opacity:.85}
+.prod-banner{padding-top:0}
+.prod-banner .page-banner{margin-bottom:0}
+
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:90;
+  padding:.75rem clamp(1.4rem,5vw,3rem) calc(.75rem + env(safe-area-inset-bottom));
+  background:rgba(251,248,241,.95);backdrop-filter:blur(14px);border-top:1px solid var(--line);
+  box-shadow:0 -8px 28px rgba(36,28,18,.08)}
+.buybar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.bb-info{display:flex;flex-direction:column;gap:.15rem;min-width:0}
+.bb-name{font-family:"Space Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bb-price{font-family:"Bodoni Moda",serif;font-size:1.4rem;line-height:1}
+.buybar .btn{flex-shrink:0;padding:.9rem 1.8rem}
+body:has(.buybar){padding-bottom:4.6rem}
 
 /* ---------- PURITY / LAB ---------- */
 .lab{background:linear-gradient(180deg,var(--resin),var(--obsidian))}
@@ -242,7 +247,9 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
   nav.links.open a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
   .navtoggle{display:block}
   .split,.lab-grid{grid-template-columns:1fr}
-  .catalog-grid{grid-template-columns:1fr;max-width:420px;margin-inline:auto}
+  .buy-grid{grid-template-columns:1fr;gap:1.4rem}
+  .buy-vis{aspect-ratio:16/10;max-height:none}
+  .buy-title{margin-bottom:1.1rem}
   .ritual-grid{grid-template-columns:1fr 1fr}
   .science-grid{grid-template-columns:1fr 1fr}
   .altcard{aspect-ratio:16/10}
