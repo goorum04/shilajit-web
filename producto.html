@@ -15,9 +15,9 @@
 <meta property="og:description" content="Resina pura de shilajit Arakul en tres formats: Essencial 30 g, Format 50 g i pack Ritual amb cullereta dosificadora.">
 <meta property="og:url" content="https://aarakul.com/producto.html">
 <meta property="og:locale" content="ca_AD">
-<meta property="og:image" content="https://goorum04.github.io/shilajit-web/assets/brand-social.jpg">
+<meta property="og:image" content="https://aarakul.com/assets/brand-social.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://goorum04.github.io/shilajit-web/assets/brand-social.jpg">
+<meta name="twitter:image" content="https://aarakul.com/assets/brand-social.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@
     {
       "@type": "Product",
       "name": "Arakul · Format",
-      "description": "Resina pura de shilajit, 50 g, refinada i envasada a Andorra. Millor relació per gram per a ús continuat.",
+      "description": "Resina pura de shilajit, 50 g, refinada i envasada a Andorra. El format habitual per a un ús continuat.",
       "brand": {"@type": "Brand", "name": "Arakul"},
       "category": "Complement alimentari",
       "offers": {"@type": "Offer", "price": "49", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://aarakul.com/producto.html"}
@@ -81,19 +81,48 @@
 <!-- COMPRA -->
 <section class="buy" id="comprar">
   <div class="wrap buy-grid">
-    <div class="buy-vis"><img id="buyImg" src="assets/product-30g.jpg" alt="" data-alt-i="p1alt"></div>
+    <div class="buy-vis">
+      <img id="buyImg" src="assets/product-30g.jpg" alt="" data-alt-i="p1alt" fetchpriority="high">
+      <div class="buy-thumbs">
+        <button type="button" class="thumb active" data-src="assets/product-30g.jpg" data-alt="p1alt"><img src="assets/thumb-product-30g.jpg" alt="" data-alt-i="p1alt" width="128" height="128"></button>
+        <button type="button" class="thumb" data-src="assets/product-lifestyle.jpg" data-alt="prodBannerAlt"><img src="assets/thumb-product-lifestyle.jpg" alt="" data-alt-i="prodBannerAlt" width="128" height="128"></button>
+        <button type="button" class="thumb" data-src="assets/ritual-goldtest.jpg" data-alt="gtAlt"><img src="assets/thumb-ritual-goldtest.jpg" alt="" data-alt-i="gtAlt" width="128" height="128"></button>
+        <button type="button" class="thumb" data-src="assets/resin-macro.jpg" data-alt="purBannerAlt"><img src="assets/thumb-resin-macro.jpg" alt="" data-alt-i="purBannerAlt" width="128" height="128"></button>
+      </div>
+    </div>
     <div class="buy-info">
       <span class="eyebrow" data-i="heroEy">Shilajit de l'Himàlaia</span>
       <h1 class="buy-title">Arakul</h1>
       <div class="buy-pick mono" data-i="buyPick">Tria el format</div>
       <div class="opts">
-        <button type="button" class="opt active" aria-pressed="true" data-v="30g" data-price="29 €" data-img="assets/product-30g.jpg" data-desc="p1desc" data-alt="p1alt">30 g</button>
-        <button type="button" class="opt" aria-pressed="false" data-v="50g" data-price="49 €" data-img="assets/product-50g.jpg" data-desc="p2desc" data-alt="p2alt">50 g</button>
-        <button type="button" class="opt" aria-pressed="false" data-v="50g-ritual" data-price="59 €" data-img="assets/product-ritual.jpg" data-desc="p3desc" data-alt="p3alt">50 g <span data-i="optRitual">Ritual</span></button>
+        <button type="button" class="opt active" aria-pressed="true" data-v="30g">30 g</button>
+        <button type="button" class="opt" aria-pressed="false" data-v="50g">50 g</button>
+        <button type="button" class="opt" aria-pressed="false" data-v="50g-ritual">50 g <span data-i="optRitual">Ritual</span></button>
       </div>
-      <div class="buy-price" id="buyPrice">29 €</div>
+      <div class="buy-price" data-fmt="price">29 €</div>
       <p class="buy-desc" id="buyDesc" data-i="p1desc">El pot per començar. Prop d'un mes de ritual diari a dosi de mida pèsol.</p>
-      <p class="buy-note" data-i="cSub">Cada pot arriba amb el seu certificat d'anàlisi de lot, realitzat per Eurofins. Els preus són orientatius de sortida; la botiga obre aviat.</p>
+      <ul class="buy-points">
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i="pt1">≥ 60 % d'àcid fúlvic</span></li>
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i="pt2">Cada lot analitzat per Eurofins</span></li>
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i="pt3">Sense additius ni sucres</span></li>
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i="pt4">Refinat i envasat a Andorra</span></li>
+      </ul>
+      <p class="buy-note" data-i="buyNote">Preus orientatius de sortida. La botiga obre aviat: reserva i t'avisem el primer dia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section id="formats">
+  <div class="wrap duo">
+    <div class="head reveal">
+      <span class="eyebrow" data-i="cmpEy">Els formats</span>
+      <h2 data-i="cmpTitle">Què inclou cada format.</h2>
+    </div>
+    <div class="analysis cmp reveal">
+      <div class="row"><span class="k">30 g</span><span class="inc" data-i="inc1">Pot de resina pura</span><span class="v" data-price-of="30g">29 €</span></div>
+      <div class="row"><span class="k">50 g</span><span class="inc" data-i="inc1">Pot de resina pura</span><span class="v" data-price-of="50g">49 €</span></div>
+      <div class="row"><span class="k">50 g <span data-i="optRitual">Ritual</span></span><span class="inc" data-i="inc3">Pot de resina de 50 g, cullereta dosificadora i guia d'ús</span><span class="v" data-price-of="50g-ritual">59 €</span></div>
     </div>
   </div>
 </section>
@@ -140,17 +169,6 @@
   </div>
   <p class="foot-legal" data-i="fLegal">© 2026 Arakul · Andorra · Complement alimentari. No substitueix una dieta variada ni un estil de vida saludable. Mantenir fora de l'abast dels infants. Web informativa; venda encara no activa.</p>
 </footer>
-
-<!-- BARRA DE COMPRA FIXA -->
-<div class="buybar">
-  <div class="wrap">
-    <div class="bb-info">
-      <span class="bb-name">Arakul · <span id="bbFmt">30 g</span></span>
-      <span class="bb-price" id="bbPrice">29 €</span>
-    </div>
-    <a href="#llista" class="btn btn-gold" data-i="buyBtn">Reservar</a>
-  </div>
-</div>
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>

@@ -34,7 +34,7 @@ h1,h2,h3,.display{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;line-h
 .mono{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.14em;font-size:.7rem}
 .eyebrow{font-family:"Space Mono",monospace;text-transform:uppercase;letter-spacing:.28em;font-size:.68rem;color:var(--gold);font-weight:400}
 a{color:inherit;text-decoration:none}
-section{padding:clamp(4.5rem,10vw,8rem) clamp(1.4rem,5vw,3rem)}
+section{padding:clamp(3.5rem,7vw,5.5rem) clamp(1.4rem,5vw,3rem)}
 .wrap{max-width:var(--maxw);margin:0 auto}
 
 /* ---------- NAV ---------- */
@@ -97,7 +97,7 @@ nav.links a.active{color:var(--gold)}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
 
 /* ---------- GENERIC SECTION HEADS ---------- */
-.head{max-width:56ch;margin-bottom:3.5rem}
+.head{max-width:56ch;margin-bottom:2.4rem}
 .head h2{font-size:clamp(2rem,5vw,3.4rem);margin:1rem 0}
 .head p{color:var(--stone);font-size:1.05rem}
 
@@ -130,8 +130,16 @@ nav.links a.active{color:var(--gold)}
 .buy{padding-top:clamp(6.2rem,11vw,8.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
 .crumb + .buy{padding-top:2rem}
 .buy-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.8rem,5vw,4.5rem);align-items:center}
-.buy-vis{aspect-ratio:1/1;max-height:min(66vh,560px);border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--resin)}
-.buy-vis img{width:100%;height:100%;object-fit:cover;display:block}
+.buy-vis{position:relative;aspect-ratio:1/1;max-height:min(66vh,560px);border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--resin)}
+#buyImg{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .25s}
+#buyImg.swap{opacity:.25}
+.buy-thumbs{position:absolute;left:.7rem;bottom:.7rem;display:flex;gap:.4rem}
+.thumb{width:3.25rem;height:3.25rem;padding:0;cursor:pointer;border-radius:3px;overflow:hidden;
+  border:2px solid rgba(251,248,241,.55);background:none;opacity:.82;transition:opacity .2s,border-color .2s}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb:hover{opacity:1}
+.thumb.active{opacity:1;border-color:#E7C374}
+.thumb:focus-visible{outline:2px solid #E7C374;outline-offset:2px}
 .buy-title{font-size:clamp(2.8rem,6.5vw,5rem);margin:.5rem 0 1.5rem}
 .buy-pick{color:var(--stone);margin-bottom:.65rem}
 .opts{display:flex;flex-wrap:wrap;gap:.5rem}
@@ -143,7 +151,11 @@ nav.links a.active{color:var(--gold)}
 .opt.active{background:var(--parchment);color:var(--obsidian);border-color:var(--parchment)}
 .buy-price{font-family:"Bodoni Moda",serif;font-size:clamp(2.1rem,4.5vw,2.9rem);line-height:1;margin:1.5rem 0 .9rem}
 .buy-desc{color:var(--stone);max-width:44ch;min-height:3.2em}
-.buy-note{color:var(--stone);font-size:.82rem;max-width:48ch;margin-top:1.1rem}
+.buy-points{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.55rem 1.4rem;max-width:34rem;
+  margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--line);font-size:.9rem}
+.buy-points li{display:flex;align-items:flex-start;gap:.55rem}
+.buy-points svg{width:1rem;height:1rem;flex-shrink:0;margin-top:.22rem;color:var(--gold)}
+.buy-note{color:var(--stone);font-size:.82rem;max-width:48ch;margin-top:1.2rem}
 .prod-banner{padding-top:0}
 .prod-banner .page-banner{margin-bottom:0}
 
@@ -158,6 +170,32 @@ nav.links a.active{color:var(--gold)}
 .bb-price{font-family:"Bodoni Moda",serif;font-size:1.4rem;line-height:1}
 .buybar .btn{flex-shrink:0;padding:.9rem 1.8rem}
 body:has(.buybar){padding-bottom:4.6rem}
+body:has(#wlEmail:focus) .buybar{display:none}
+
+/* ---------- TWO-COLUMN SECTIONS ---------- */
+.tint{background:var(--resin)}
+.duo{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,5vw,4.5rem);align-items:start}
+.duo .head{margin-bottom:0}
+.duo-lead{color:var(--stone);margin-bottom:1rem}
+.duo .sci-uses{margin:0 0 1.8rem}
+.faq-acc{border-top:1px solid var(--line)}
+.faq-acc details{border-bottom:1px solid var(--line)}
+.faq-acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  padding:1.15rem 0;font-family:"Bodoni Moda",Georgia,serif;font-weight:500;font-size:1.15rem;line-height:1.25}
+.faq-acc summary::-webkit-details-marker{display:none}
+.faq-acc summary::after{content:"+";font-family:"Space Mono",monospace;font-size:1.1rem;color:var(--gold);flex-shrink:0}
+.faq-acc details[open] summary::after{content:"\2212"}
+.faq-acc summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.faq-acc p{color:var(--stone);font-size:.95rem;max-width:64ch;padding-bottom:1.3rem}
+.analysis.cmp{background:var(--panel)}
+.analysis.cmp .row{display:grid;grid-template-columns:8.5rem 1fr auto;gap:1rem;align-items:baseline}
+.analysis.cmp .inc{font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:.92rem;letter-spacing:0;color:var(--parchment)}
+.analysis.cmp .v{font-family:"Bodoni Moda",Georgia,serif;font-size:1.2rem;letter-spacing:0;white-space:nowrap}
+.ritual-home{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.ritual-home .ritual-grid{grid-template-columns:1fr 1fr;gap:1.6rem 1.8rem}
+.ritual-fig img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:74% 50%;display:block;border:1px solid var(--line);border-radius:4px}
+.ritual-fig figcaption{margin-top:1rem;color:var(--stone);font-size:.92rem}
+.ritual-fig strong{display:block;font-family:"Bodoni Moda",Georgia,serif;font-weight:500;font-size:1.15rem;color:var(--parchment);margin-bottom:.25rem}
 
 /* ---------- PURITY / LAB ---------- */
 .lab{background:linear-gradient(180deg,var(--resin),var(--obsidian))}
@@ -213,6 +251,8 @@ body:has(.buybar){padding-bottom:4.6rem}
 .wl .wrap{position:relative;z-index:1}
 .wl h2{font-size:clamp(2.2rem,6vw,4rem);margin-bottom:1.2rem}
 .wl p{color:var(--parchment);max-width:48ch;margin:0 auto 2.4rem}
+.wl .wl-pick{font-family:"Space Mono",monospace;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--stone);margin:-1rem auto 1.4rem}
+.wl .wl-pick strong{color:var(--parchment);font-weight:700;white-space:nowrap}
 .wl-form{display:flex;gap:.6rem;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
 .wl-form input{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line);color:var(--parchment);
   padding:.95rem 1.2rem;border-radius:2px;font-family:"Hanken Grotesk",sans-serif;font-size:.95rem}
@@ -250,6 +290,9 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
   .navtoggle{display:block}
   .split,.lab-grid{grid-template-columns:1fr}
   .buy-grid{grid-template-columns:1fr;gap:1.4rem}
+  .duo,.ritual-home{grid-template-columns:1fr;gap:1.8rem}
+  .ritual-fig img{aspect-ratio:16/10}
+  .thumb{width:2.75rem;height:2.75rem}
   .buy-vis{aspect-ratio:16/10;max-height:none}
   .buy-title{margin-bottom:1.1rem}
   .ritual-grid{grid-template-columns:1fr 1fr}
@@ -257,7 +300,10 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
   .altcard{aspect-ratio:16/10}
 }
 @media(max-width:520px){
-  .ritual-grid{grid-template-columns:1fr}
+  .ritual-grid,.ritual-home .ritual-grid{grid-template-columns:1fr}
+  .buy-points{grid-template-columns:1fr}
+  .analysis.cmp .row{grid-template-columns:1fr auto}
+  .analysis.cmp .inc{grid-column:1/-1;grid-row:2}
   .science-grid{grid-template-columns:1fr}
   .lang{flex-wrap:wrap;justify-content:flex-end}
 }

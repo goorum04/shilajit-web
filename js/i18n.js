@@ -1,5 +1,8 @@
 const I = {
   ca:{
+    pt1:"≥ 60 % d'àcid fúlvic",pt2:"Cada lot analitzat per Eurofins",pt3:"Sense additius ni sucres",pt4:"Refinat i envasat a Andorra",
+    buyNote:"Preus orientatius de sortida. La botiga obre aviat: reserva i t'avisem el primer dia.",wlPick:"La teva reserva:",
+    cmpEy:"Els formats",cmpTitle:"Què inclou cada format.",inc1:"Pot de resina pura",inc3:"Pot de resina de 50 g, cullereta dosificadora i guia d'ús",
     buyPick:"Tria el format",optRitual:"Ritual",buyBtn:"Reservar",
     navHome:"Inici",nav1:"Origen",nav2:"Producte",nav3:"Puresa",nav4:"Ús",navSci:"Evidència",nav5:"FAQ",
     heroEy:"Shilajit de l'Himàlaia",
@@ -9,9 +12,8 @@ const I = {
     o1p1:"El shilajit neix a milers de metres, on la pressió i el temps concentren la matèria orgànica dins la pedra fins a convertir-la en una resina densa, rica en àcid fúlvic i minerals traça.",
     o1p2:"Nosaltres el portem en cru des dels massissos de l'Himàlaia i el purifiquem i envasem aquí, a Andorra —a més de mil metres— sense additius, sense sucres, sense drecera.",
     o1alt:"Altitud mitjana d'Andorra, on refinem cada lot.",
-    cSub:"Cada pot arriba amb el seu certificat d'anàlisi de lot, realitzat per Eurofins. Els preus són orientatius de sortida; la botiga obre aviat.",
     p1desc:"El pot per començar. Prop d'un mes de ritual diari a dosi de mida pèsol.",
-    p2desc:"El nostre format habitual. Millor relació per gram per a un ús continuat.",
+    p2desc:"El nostre format habitual, pensat per a un ús continuat.",
     p3desc:"Resina de 50 g amb cullereta dosificadora i guia d'ús. El regal per iniciar-se.",
     lEy:"Puresa i anàlisi",lTitle:"El que hi ha dins. I el que no.",
     lp1:"La resina autèntica es defineix pel seu àcid fúlvic i el seu perfil mineral. Sense farciments, sense sucres afegits, sense colorants. Aquesta és una anàlisi tipus del nostre lot de referència.",
@@ -47,6 +49,9 @@ const I = {
     purBannerAlt:"Primer pla macro de la resina de shilajit negra, brillant com l'obsidiana"
   },
   es:{
+    pt1:"≥ 60 % de ácido fúlvico",pt2:"Cada lote analizado por Eurofins",pt3:"Sin aditivos ni azúcares",pt4:"Refinado y envasado en Andorra",
+    buyNote:"Precios orientativos de salida. La tienda abre pronto: reserva y te avisamos el primer día.",wlPick:"Tu reserva:",
+    cmpEy:"Los formatos",cmpTitle:"Qué incluye cada formato.",inc1:"Tarro de resina pura",inc3:"Tarro de resina de 50 g, cucharita dosificadora y guía de uso",
     buyPick:"Elige el formato",optRitual:"Ritual",buyBtn:"Reservar",
     navHome:"Inicio",nav1:"Origen",nav2:"Producto",nav3:"Pureza",nav4:"Uso",navSci:"Evidencia",nav5:"FAQ",
     heroEy:"Shilajit del Himalaya",
@@ -56,9 +61,8 @@ const I = {
     o1p1:"El shilajit nace a miles de metros, donde la presión y el tiempo concentran la materia orgánica dentro de la piedra hasta convertirla en una resina densa, rica en ácido fúlvico y minerales traza.",
     o1p2:"Nosotros lo traemos en crudo desde los macizos del Himalaya y lo purificamos y envasamos aquí, en Andorra —a más de mil metros— sin aditivos, sin azúcares, sin atajos.",
     o1alt:"Altitud media de Andorra, donde refinamos cada lote.",
-    cSub:"Cada tarro llega con su certificado de análisis de lote, realizado por Eurofins. Los precios son orientativos de salida; la tienda abre pronto.",
     p1desc:"El tarro para empezar. Cerca de un mes de ritual diario a dosis del tamaño de un guisante.",
-    p2desc:"Nuestro formato habitual. Mejor relación por gramo para un uso continuado.",
+    p2desc:"Nuestro formato habitual, pensado para un uso continuado.",
     p3desc:"Resina de 50 g con cucharita dosificadora y guía de uso. El regalo para iniciarse.",
     lEy:"Pureza y análisis",lTitle:"Lo que hay dentro. Y lo que no.",
     lp1:"La resina auténtica se define por su ácido fúlvico y su perfil mineral. Sin rellenos, sin azúcares añadidos, sin colorantes. Este es un análisis tipo de nuestro lote de referencia.",
@@ -94,6 +98,9 @@ const I = {
     purBannerAlt:"Primer plano macro de la resina de shilajit negra, brillante como la obsidiana"
   },
   en:{
+    pt1:"≥ 60% fulvic acid",pt2:"Every batch tested by Eurofins",pt3:"No additives or sugars",pt4:"Refined and packed in Andorra",
+    buyNote:"Indicative launch prices. The shop opens soon: reserve and we'll tell you on day one.",wlPick:"Your reservation:",
+    cmpEy:"The sizes",cmpTitle:"What each size includes.",inc1:"Jar of pure resin",inc3:"50 g jar of resin, dosing spoon and usage guide",
     buyPick:"Choose your size",optRitual:"Ritual",buyBtn:"Reserve",
     navHome:"Home",nav1:"Origin",nav2:"Product",nav3:"Purity",nav4:"Use",navSci:"Evidence",nav5:"FAQ",
     heroEy:"Shilajit from the Himalaya",
@@ -103,9 +110,8 @@ const I = {
     o1p1:"Shilajit is born thousands of metres up, where pressure and time concentrate organic matter inside the stone until it becomes a dense resin, rich in fulvic acid and trace minerals.",
     o1p2:"We bring it raw from the Himalayan massifs and purify and pack it here, in Andorra —above a thousand metres— with no additives, no sugars, no shortcuts.",
     o1alt:"Andorra's average altitude, where we refine every batch.",
-    cSub:"Every jar ships with its own batch analysis certificate, carried out by Eurofins. Prices are indicative launch prices; the shop opens soon.",
     p1desc:"The jar to begin with. Close to a month of daily, pea-sized ritual.",
-    p2desc:"Our everyday size. Better value per gram for continued use.",
+    p2desc:"Our everyday size, made for continued use.",
     p3desc:"50 g of resin with a dosing spoon and usage guide. The gift to get started.",
     lEy:"Purity & analysis",lTitle:"What's inside. And what isn't.",
     lp1:"Authentic resin is defined by its fulvic acid and mineral profile. No fillers, no added sugars, no colourants. This is a typical analysis of our reference batch.",
@@ -141,6 +147,9 @@ const I = {
     purBannerAlt:"Macro close-up of the black shilajit resin, glossy like obsidian"
   },
   fr:{
+    pt1:"≥ 60 % d'acide fulvique",pt2:"Chaque lot analysé par Eurofins",pt3:"Sans additifs ni sucres",pt4:"Raffiné et conditionné en Andorre",
+    buyNote:"Prix indicatifs au lancement. La boutique ouvre bientôt : réservez et nous vous préviendrons le premier jour.",wlPick:"Votre réservation :",
+    cmpEy:"Les formats",cmpTitle:"Ce que contient chaque format.",inc1:"Pot de résine pure",inc3:"Pot de résine de 50 g, cuillère doseuse et guide d'usage",
     buyPick:"Choisissez le format",optRitual:"Rituel",buyBtn:"Réserver",
     navHome:"Accueil",nav1:"Origine",nav2:"Produit",nav3:"Pureté",nav4:"Usage",navSci:"Preuves",nav5:"FAQ",
     heroEy:"Shilajit de l'Himalaya",
@@ -150,9 +159,8 @@ const I = {
     o1p1:"Le shilajit naît à des milliers de mètres, là où la pression et le temps concentrent la matière organique dans la pierre jusqu'à en faire une résine dense, riche en acide fulvique et en minéraux traces.",
     o1p2:"Nous le rapportons brut des massifs de l'Himalaya et le purifions et le conditionnons ici, en Andorre —à plus de mille mètres— sans additifs, sans sucres, sans raccourci.",
     o1alt:"Altitude moyenne de l'Andorre, où nous raffinons chaque lot.",
-    cSub:"Chaque pot arrive avec son certificat d'analyse de lot, réalisé par Eurofins. Les prix sont indicatifs au lancement ; la boutique ouvre bientôt.",
     p1desc:"Le pot pour débuter. Près d'un mois de rituel quotidien à dose de la taille d'un pois.",
-    p2desc:"Notre format courant. Meilleur rapport au gramme pour un usage continu.",
+    p2desc:"Notre format courant, pensé pour un usage continu.",
     p3desc:"50 g de résine avec cuillère doseuse et guide d'usage. Le cadeau pour commencer.",
     lEy:"Pureté et analyse",lTitle:"Ce qu'il y a dedans. Et ce qu'il n'y a pas.",
     lp1:"La résine authentique se définit par son acide fulvique et son profil minéral. Sans charges, sans sucres ajoutés, sans colorants. Voici une analyse type de notre lot de référence.",
