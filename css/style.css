@@ -115,11 +115,10 @@ nav.links a.active{color:var(--gold)}
 @media(max-width:640px){.page-banner{aspect-ratio:16/10}}
 
 /* ---------- ORIGIN / TWO COL ---------- */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.split{max-width:46rem}
 .split .num{font-family:"Space Mono",monospace;color:var(--gold);font-size:.7rem;letter-spacing:.2em}
 .split h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:.8rem 0 1.3rem}
 .split p{color:var(--stone);margin-bottom:1.1rem}
-.altcard{aspect-ratio:4/5;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#171310}
 
 /* ---------- BUY ---------- */
 .buy{padding-top:clamp(6.2rem,11vw,8.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
@@ -283,7 +282,7 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
   }
   nav.links.open a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
   .navtoggle{display:block}
-  .split,.lab-grid{grid-template-columns:1fr}
+  .lab-grid{grid-template-columns:1fr}
   .buy-grid{grid-template-columns:1fr;gap:1.4rem}
   .duo,.ritual-home{grid-template-columns:1fr;gap:1.8rem}
   .ritual-fig img{aspect-ratio:16/10}
@@ -292,7 +291,6 @@ footer{padding:3.5rem clamp(1.4rem,5vw,3rem) 2.5rem;border-top:1px solid var(--l
   .buy-title{margin-bottom:1.1rem}
   .ritual-grid{grid-template-columns:1fr 1fr}
   .science-grid{grid-template-columns:1fr 1fr}
-  .altcard{aspect-ratio:16/10}
 }
 @media(max-width:520px){
   .ritual-grid,.ritual-home .ritual-grid{grid-template-columns:1fr}
