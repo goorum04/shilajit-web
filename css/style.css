@@ -119,12 +119,7 @@ nav.links a.active{color:var(--gold)}
 .split .num{font-family:"Space Mono",monospace;color:var(--gold);font-size:.7rem;letter-spacing:.2em}
 .split h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:.8rem 0 1.3rem}
 .split p{color:var(--stone);margin-bottom:1.1rem}
-.altcard{position:relative;aspect-ratio:4/5;border:1px solid var(--line);border-radius:3px;overflow:hidden;
-  background:linear-gradient(160deg,#171310,#0d0b08);display:flex;flex-direction:column;justify-content:flex-end;padding:2rem}
-.altcard .scrim{position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,12,9,.92) 0%,rgba(14,12,9,.55) 38%,rgba(14,12,9,.05) 70%);}
-.altcard .meta{position:relative;z-index:2}
-.altcard .meta .big{font-family:"Bodoni Moda",serif;font-size:2.6rem;color:#E7C374;line-height:1}
-.altcard .meta .lbl{color:#C9BCA8;font-size:.82rem;margin-top:.4rem}
+.altcard{aspect-ratio:4/5;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#171310}
 
 /* ---------- BUY ---------- */
 .buy{padding-top:clamp(6.2rem,11vw,8.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
